@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-06-04T20:02:13.327337" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Python-selenium\pythonSeleniumproject1\robot files\Test.robot">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:13.781765" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-04T20:02:13.780769" elapsed="25.570061"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.351914" elapsed="0.026370"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:13.778946" elapsed="25.599634"/>
+</kw>
+<test id="s1-t1" name="Verify the All Inputs in website" line="12">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.380431" level="INFO">Typing text 'Manoj' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>Manoj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.379673" elapsed="0.148667"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.528957" level="INFO">Typing text 'akulamanoj' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>akulamanoj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.528717" elapsed="0.115518"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.644902" level="INFO">Typing text '9701240422' into text field 'xpath://input[@id='phone']'.</msg>
+<arg>xpath://input[@id='phone']</arg>
+<arg>9701240422</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.644646" elapsed="0.115752"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.779914" level="INFO">Current page contains text 'Automation Testing Practice'.</msg>
+<arg>Automation Testing Practice</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.760754" elapsed="0.019310"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:39.378758" elapsed="0.401728"/>
+</test>
+<test id="s1-t2" name="Verify the radio buttons" line="18">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.782526" level="INFO">Clicking element 'xpath://input[@id='male']'.</msg>
+<msg time="2025-06-04T20:02:39.886475" level="INFO">${radio} = None</msg>
+<var>${radio}</var>
+<arg>xpath://input[@id='male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.781988" elapsed="0.104579"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${radio}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.887046" elapsed="0.000433"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:39.781231" elapsed="0.106590"/>
+</test>
+<test id="s1-t3" name="Verify the checkbox in webpage" line="22">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.890096" level="INFO">Clicking element 'id:sunday'.</msg>
+<arg>id:sunday</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.889744" elapsed="0.080710"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:39.971287" level="INFO">Verifying checkbox 'id:sunday' is selected.</msg>
+<arg>id:sunday</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-06-04T20:02:39.970923" elapsed="0.046645"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:39.888997" elapsed="0.129060"/>
+</test>
+<test id="s1-t4" name="Verify the dropdown in webpage" line="26">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.019512" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
+<arg>id=country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.019228" elapsed="0.094416"/>
+</kw>
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.259200" level="INFO">${selected} = India</msg>
+<var>${selected}</var>
+<arg>id=country</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.114123" elapsed="0.145145"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected}</arg>
+<arg>India</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.259651" elapsed="0.000311"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:40.018726" elapsed="0.241492"/>
+</test>
+<test id="s1-t5" name="Verify the colour in webpage" line="31">
+<kw name="Get List Items" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.373088" level="INFO">${colours} = ['Red', 'Blue', 'Green', 'Yellow', 'Red', 'White', 'Green']</msg>
+<var>${colours}</var>
+<arg>xpath://select[@id='colors']</arg>
+<doc>Returns all labels or values of selection list ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.261212" elapsed="0.111946"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${colours}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.373552" elapsed="0.000437"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:40.260743" elapsed="0.113651"/>
+</test>
+<test id="s1-t6" name="Verify the drop click element" line="35">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.376712" level="INFO">Typing text 'Hello world' into text field 'xpath://input[@id='field1']'.</msg>
+<arg>xpath://input[@id='field1']</arg>
+<arg>Hello world</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.376161" elapsed="0.117386"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.494231" level="INFO">Clicking button 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.493943" elapsed="0.093309"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:40.375325" elapsed="0.212356"/>
+</test>
+<test id="s1-t7" name="Verify the static web element" line="38">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.589730" level="INFO">Clicking element 'xpath://*[@id="HTML1"]/div[1]/table/tbody/tr[1]/th[1]'.</msg>
+<msg time="2025-06-04T20:02:40.669347" level="INFO">${text} = None</msg>
+<var>${text}</var>
+<arg>xpath://*[@id="HTML1"]/div[1]/table/tbody/tr[1]/th[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.589418" elapsed="0.080037"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.669982" elapsed="0.000560"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:40.588537" elapsed="0.082289"/>
+</test>
+<test id="s1-t8" name="Verify the broken link" line="42">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:40.672182" level="INFO">Clicking link 'xpath://a[normalize-space()='Errorcode 400']'.</msg>
+<msg time="2025-06-04T20:02:42.985492" level="INFO">${link} = None</msg>
+<var>${link}</var>
+<arg>xpath://a[normalize-space()='Errorcode 400']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:40.671850" elapsed="2.314103"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:43.012230" level="INFO">Current page contains text 'Bad Request'.</msg>
+<arg>Bad Request</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-06-04T20:02:42.986438" elapsed="0.025907"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-06-04T20:02:43.012690" elapsed="0.031051"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:40.671324" elapsed="2.372890"/>
+</test>
+<test id="s1-t9" name="Verify the mouse cover" line="47">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-04T20:02:53.047174" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-04T20:02:43.045796" elapsed="10.001628"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-06-04T20:02:53.048438" level="INFO">Simulating Mouse Over on element '//button[text()='Point Me']'.</msg>
+<arg>${Point_me}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-06-04T20:02:53.048013" elapsed="0.293631"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:43.044957" elapsed="10.297380"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-04T20:02:53.344327" elapsed="2.260989"/>
+</kw>
+<status status="PASS" start="2025-06-04T20:02:13.329269" elapsed="42.276169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="9" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

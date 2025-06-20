@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-27T00:20:56.548266" rpa="false" schemaversion="5">
+<suite id="s1" name="Mobileapp login" source="C:\Python-selenium\pythonSeleniumproject1\Appium library\Mobileapp_login.robot">
+<test id="s1-t1" name="Full Cashback Flow For Amazon" line="13">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-05-27T00:20:56.776756" elapsed="7.063009"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:08.668727" level="INFO">xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']
+xpath criteria: //android.widget.TextView[@text='Next']</msg>
+<arg>xpath=//android.widget.TextView[@text='Next']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:03.840649" elapsed="4.828208"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:08.670717" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Next']'.</msg>
+<msg time="2025-05-27T00:21:08.840409" level="INFO">xpath criteria: //android.widget.TextView[@text='Next']</msg>
+<arg>xpath=//android.widget.TextView[@text='Next']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:08.669215" elapsed="0.171320"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:08.842394" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Next']'.</msg>
+<msg time="2025-05-27T00:21:10.727067" level="INFO">xpath criteria: //android.widget.TextView[@text='Next']</msg>
+<arg>xpath=//android.widget.TextView[@text='Next']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:08.840891" elapsed="1.886285"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:10.729086" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Get Started']'.</msg>
+<msg time="2025-05-27T00:21:12.606259" level="INFO">xpath criteria: //android.widget.TextView[@text='Get Started']</msg>
+<arg>xpath=//android.widget.TextView[@text='Get Started']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:10.727536" elapsed="1.878890"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:14.111752" level="INFO">xpath criteria: //android.widget.TextView[@text='CONTINUE']
+xpath criteria: //android.widget.TextView[@text='CONTINUE']</msg>
+<arg>xpath=//android.widget.TextView[@text='CONTINUE']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:12.606877" elapsed="1.504982"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:14.113688" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='CONTINUE']'.</msg>
+<msg time="2025-05-27T00:21:14.281710" level="INFO">xpath criteria: //android.widget.TextView[@text='CONTINUE']</msg>
+<arg>xpath=//android.widget.TextView[@text='CONTINUE']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:14.112200" elapsed="0.169615"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:21.015212" level="INFO">xpath criteria: //android.widget.TextView[@text='Allow']
+xpath criteria: //android.widget.TextView[@text='Allow']
+xpath criteria: //android.widget.TextView[@text='Allow']</msg>
+<arg>xpath=//android.widget.TextView[@text='Allow']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:14.282197" elapsed="6.733122"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:21.017159" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Allow']'.</msg>
+<msg time="2025-05-27T00:21:23.535867" level="INFO">xpath criteria: //android.widget.TextView[@text='Allow']</msg>
+<arg>xpath=//android.widget.TextView[@text='Allow']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:21.015659" elapsed="2.520311"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:23.770520" level="INFO">xpath criteria: //*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']</msg>
+<arg>xpath=//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:23.536416" elapsed="0.234208"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:23.772782" level="INFO">Clicking element 'xpath=//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']'.</msg>
+<msg time="2025-05-27T00:21:23.903433" level="INFO">xpath criteria: //*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']</msg>
+<arg>xpath=//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:23.770990" elapsed="0.132548"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:23.905383" level="INFO">Clicking element 'xpath=//com.horcrux.svg.C'.</msg>
+<msg time="2025-05-27T00:21:25.368856" level="INFO">xpath criteria: //com.horcrux.svg.C</msg>
+<arg>xpath=//com.horcrux.svg.C</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:23.903872" elapsed="1.465121"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:25.801604" level="INFO">xpath criteria: //android.widget.TextView[@text='Mobiles']</msg>
+<arg>xpath=//android.widget.TextView[@text='Mobiles']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:25.369419" elapsed="0.432299"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:25.803747" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Mobiles']'.</msg>
+<msg time="2025-05-27T00:21:28.296616" level="INFO">xpath criteria: //android.widget.TextView[@text='Mobiles']</msg>
+<arg>xpath=//android.widget.TextView[@text='Mobiles']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:25.802099" elapsed="2.494620"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:29.359685" level="INFO">xpath criteria: //*[contains(@text,'₹61,390')]
+xpath criteria: //*[contains(@text,'₹61,390')]</msg>
+<arg>xpath=//*[contains(@text,'₹61,390')]</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:28.297073" elapsed="1.062775"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:29.532230" level="INFO">Element 'xpath=//*[contains(@text,'₹61,390')]' text is '₹61,390' </msg>
+<msg time="2025-05-27T00:21:29.532337" level="INFO">xpath criteria: //*[contains(@text,'₹61,390')]</msg>
+<msg time="2025-05-27T00:21:29.532460" level="INFO">${amount_1} = ₹61,390</msg>
+<var>${amount_1}</var>
+<arg>xpath=//*[contains(@text,'₹61,390')]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-05-27T00:21:29.361395" elapsed="0.171102"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:29.642892" level="INFO">xpath criteria: //android.widget.TextView[@text='Apple iPhone 15 (Black, 128GB Storage)']</msg>
+<arg>xpath=//android.widget.TextView[@text='Apple iPhone 15 (Black, 128GB Storage)']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-05-27T00:21:29.532854" elapsed="0.110137"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:29.644919" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Apple iPhone 15 (Black, 128GB Storage)']'.</msg>
+<msg time="2025-05-27T00:21:29.805813" level="INFO">xpath criteria: //android.widget.TextView[@text='Apple iPhone 15 (Black, 128GB Storage)']</msg>
+<arg>xpath=//android.widget.TextView[@text='Apple iPhone 15 (Black, 128GB Storage)']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:29.643431" elapsed="0.162526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:31.385863" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'View Breakdown')]
+xpath criteria: //android.widget.TextView[contains(@text,'View Breakdown')]
+xpath criteria: //android.widget.TextView[contains(@text,'View Breakdown')]</msg>
+<arg>xpath=//android.widget.TextView[contains(@text,'View Breakdown')]</arg>
+<arg>15s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-05-27T00:21:29.806486" elapsed="1.579483"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:31.387922" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text,'View Breakdown')]'.</msg>
+<msg time="2025-05-27T00:21:31.609797" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'View Breakdown')]</msg>
+<arg>xpath=//android.widget.TextView[contains(@text,'View Breakdown')]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-05-27T00:21:31.386317" elapsed="0.223583"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-05-27T00:21:32.637831" level="INFO">Element 'xpath=//*[contains(@text,'₹61,390')]' text is '₹61,390' </msg>
+<msg time="2025-05-27T00:21:32.637934" level="INFO">xpath criteria: //*[contains(@text,'₹61,390')]</msg>
+<msg time="2025-05-27T00:21:32.638048" level="INFO">${amount_2} = ₹61,390</msg>
+<var>${amount_2}</var>
+<arg>xpath=//*[contains(@text,'₹61,390')]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-05-27T00:21:31.610246" elapsed="1.027838"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${amount_1}</arg>
+<arg>${amount_2}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-27T00:21:32.638502" elapsed="0.000271"/>
+</kw>
+<doc>Launch app → Sign in → Search Amazon → Visit → Confirm browser opened</doc>
+<status status="PASS" start="2025-05-27T00:20:56.775287" elapsed="35.863820"/>
+</test>
+<status status="PASS" start="2025-05-27T00:20:56.550369" elapsed="36.089987"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Mobileapp login" id="s1" pass="1" fail="0" skip="0">Mobileapp login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
