@@ -1,2 +1,2 @@
-# python-automation-framework
+# Python-automation-framework
 Python selenium codes
